@@ -5,3 +5,4 @@ tags:
 ---
 > just hello world
 往事如风，我们向前看。
+往后余生，与幸福相伴。
