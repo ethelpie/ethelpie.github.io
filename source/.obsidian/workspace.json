@@ -1,0 +1,157 @@
+{
+  "main": {
+    "id": "37704f16fa66e28c",
+    "type": "split",
+    "children": [
+      {
+        "id": "cbfb10544e5175ee",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0cc58a7eb10ceecd",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "泛化.png"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "89ba0dee7dd4f77f",
+    "type": "split",
+    "children": [
+      {
+        "id": "22e7c36c6bb31813",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "463d8f7e24df93a9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "56d66321db528c29",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "4f7bccf9b086153c",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "1b65af3154969999",
+    "type": "split",
+    "children": [
+      {
+        "id": "2a9a7462ee08d284",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f26ebb7b860b090d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "泛化.png",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "66accefcfb94ab67",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "泛化.png",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ff18465c9593933c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "00efe0cfcdb0bc2f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "泛化.png"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "463d8f7e24df93a9",
+  "lastOpenFiles": [
+    "_posts/计算机协议.md",
+    "泛化.png",
+    "_posts/存储器.md",
+    "_posts/操作系统段页式存储.md",
+    "_posts/index.md",
+    "_posts/hello-world.md",
+    "_posts/CPU.md"
+  ]
+}

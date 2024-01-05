@@ -71,6 +71,269 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-图" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/01/05/%E5%9B%BE/" class="article-date">
+  <time class="dt-published" datetime="2024-01-05T11:01:33.000Z" itemprop="datePublished">2024-01-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/01/05/%E5%9B%BE/">图</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h1><h2 id="数据流图"><a href="#数据流图" class="headerlink" title="数据流图"></a>数据流图</h2><p>数据流图实例（DFD-Data Flow Diagram）<br>数据流图：DFD对系统的功能与功能之间的数据流进行建模，顶层数据流图描述了系统输入与输出。</p>
+<p><img src="/../_posts/%E5%9B%BE/%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE.png" alt="图 6">  </p>
+<p>数据记录 输入 系统 输出 用户</p>
+<h2 id="分层DFD"><a href="#分层DFD" class="headerlink" title="分层DFD"></a>分层DFD</h2><ul>
+<li>绘制分层DFD的原则一般是：先全局后局部，先整体后细节，先抽象后具体。</li>
+<li>绘制分层DFD的步骤一般是：<ul>
+<li>先确定整个系统的范围和功能，绘制顶层的DFD。</li>
+<li>绘制出顶层的DFD之后，然后逐层分解顶层DFD，获得若干中间层DFD。</li>
+<li>根据获得的中间层DFD绘制各个底层的DFD。</li>
+</ul>
+</li>
+</ul>
+<h2 id="UML类图-用例图"><a href="#UML类图-用例图" class="headerlink" title="UML类图&#x2F;用例图"></a>UML类图&#x2F;用例图</h2><p>（use case）<br>用例图是从用户的角度来描述对信息系统的需求，分析产品的功能和行为。<br>用例图定义和描述了系统的外部可见行为，是分析、设计直至组装测试的重要依据。</p>
+<p>用例图组成：<br>参与者actor：角色，系统的用户；<br>系统边界system scope：确定系统的范围，边界是一个方框，用例在边界内，参与者在边界外；<br>用例use case：系统提供的服务；<br>关联association：参与者与用例间的关系。</p>
+<p>什么是用例？<br>用例是用户期望系统具备的功能，每一个用例说明一个系统提供给它的使用者的一种服务或功能。<br>用例的目标是要定义系统的一个行为，但并不显示系统的内部结构。<br>用例名一般为动宾短语，符号是椭圆加用例名。</p>
+<h2 id="类图关系"><a href="#类图关系" class="headerlink" title="类图关系"></a>类图关系</h2><ol>
+<li>泛化（Generalization）</li>
+<li>实现（Realization）</li>
+<li>关联（Association)</li>
+<li>聚合（Aggregation）</li>
+<li>组合(Composition)</li>
+<li>依赖(Dependency)</li>
+</ol>
+<p>各种关系的强弱顺序： 泛化 &#x3D; 实现 &gt; 组合 &gt; 聚合 &gt; 关联 &gt; 依赖</p>
+<h2 id="1-泛化（Generalization）"><a href="#1-泛化（Generalization）" class="headerlink" title="1. 泛化（Generalization）"></a>1. 泛化（Generalization）</h2><p>【泛化关系】：是一种继承关系, 表示一般与特殊的关系, 它指定了子类如何特化父类的所有特征和行为. 例如：老虎是动物的一种, 即有老虎的特性也有动物的共性.<br>【箭头指向】：带三角箭头的实线，箭头指向父类</p>
+<h2 id="2-实现（Realization）"><a href="#2-实现（Realization）" class="headerlink" title="2. 实现（Realization）"></a>2. 实现（Realization）</h2><p>【实现关系】：是一种类与接口的关系, 表示类是接口所有特征和行为的实现.<br>【箭头指向】：带三角箭头的虚线，箭头指向接口</p>
+<h2 id="3-关联（Association"><a href="#3-关联（Association" class="headerlink" title="3. 关联（Association)"></a>3. 关联（Association)</h2><p>【关联关系】：是一种拥有的关系, 它使一个类知道另一个类的属性和方法；如：老师与学生，丈夫与妻子。关联可以是双向的，也可以是单向的。双向的关联可以有两个箭头或者没有箭头，单向的关联有一个箭头。<br>【代码体现】：成员变量<br>【箭头及指向】：带普通箭头的实心线，指向被拥有者</p>
+<h2 id="4-聚合（Aggregation）"><a href="#4-聚合（Aggregation）" class="headerlink" title="4. 聚合（Aggregation）"></a>4. 聚合（Aggregation）</h2><p>【聚合关系】：是整体与部分的关系, 且部分可以离开整体而单独存在. 如车和轮胎是整体和部分的关系, 轮胎离开车仍然可以存在.<br>聚合关系是关联关系的一种，是强的关联关系；关联和聚合在语法上无法区分，必须考察具体的逻辑关系。</p>
+<p>【代码体现】：成员变量<br>【箭头及指向】：带空心菱形的实心线，菱形指向整体</p>
+<h2 id="5-组合-Composition"><a href="#5-组合-Composition" class="headerlink" title="5. 组合(Composition)"></a><strong>5. 组合(Composition)</strong></h2><p>【组合关系】：是整体与部分的关系, 但部分不能离开整体而单独存在. 如公司和部门是整体和部分的关系, 没有公司就不存在部门.<br>    组合关系是关联关系的一种，是比聚合关系还要强的关系，它要求普通的聚合关系中代表整体的对象负责代表部分的对象的生命周期</p>
+<p>【代码体现】：成员变量<br>【箭头及指向】：带实心菱形的实线，菱形指向整体</p>
+<h2 id="6-依赖-Dependency"><a href="#6-依赖-Dependency" class="headerlink" title="6. 依赖(Dependency)"></a><strong>6. 依赖(Dependency)</strong></h2><p>【依赖关系】：是一种使用的关系,  即一个类的实现需要另一个类的协助, 所以要尽量不使用双向的互相依赖.<br>【代码表现】：局部变量、方法的参数或者对静态方法的调用<br>【箭头及指向】：带箭头的虚线，指向被使用者</p>
+<h3 id="绘制工具"><a href="#绘制工具" class="headerlink" title="绘制工具"></a>绘制工具</h3><p>draw.io<br>processon</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://ethelpie.github.io/2024/01/05/%E5%9B%BE/" data-id="clr02caqk0004ckdpdfdu0th7" data-title="图" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-CPU" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/01/05/CPU/" class="article-date">
+  <time class="dt-published" datetime="2024-01-05T09:03:54.000Z" itemprop="datePublished">2024-01-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/01/05/CPU/">CPU</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>CPU（Central processing unit），功能主要是解释计算机指令以及处理计算机软件中的数据。<br>寄存器（Register）是中央处理器内用来暂存指令、数据和地址的电脑存储器。</p>
+<h1 id="CPU-中各种寄存器的作用"><a href="#CPU-中各种寄存器的作用" class="headerlink" title="CPU 中各种寄存器的作用"></a>CPU 中各种寄存器的作用</h1><p>程序计数器（pc，Program counter）用于存放指令的地址<br>指令寄存器（IR，Instruction Register）用来保存当前正在执行的一条指令<br>状态寄存器（SR）<br>程序状态字PSW<br>通用寄存器（GR，General register）通用寄存器可用于传送和暂存数据，也可参与算术逻辑运算，并保存运算结果</p>
+<ol>
+<li>累加器(Accumulator）（寄存器AX）：为ALU执行运算单元提供数据并暂存结果的寄存器，累加器可用于乘、除、输入&#x2F;输出等操作，它们的使用频率很高；</li>
+<li>计数寄存器(Count Register) 寄存器CX,在循环和字符串操作时，要用它来控制循环次数；在位操作中，当移多位时，要用CL来指明移位的位数；</li>
+<li>数据寄存器(Data Register)寄存器DX，在进行乘、除运算时，它可作为默认的操作数参与运算，也可用于存放I&#x2F;O的端口地址。</li>
+<li>地址寄存器：一般用来保存当前CPU所访问的内存单元的地址，以方便对内存的读写操作。</li>
+<li>基地址寄存器(Base Register)</li>
+<li>变址寄存器（Destination Index）寄存器DI</li>
+</ol>
+<h2 id="CPU中断响应时间："><a href="#CPU中断响应时间：" class="headerlink" title="CPU中断响应时间："></a>CPU中断响应时间：</h2><p>从一个中断源向处理机发出中断服务请求开始，到处理机实际开始执行这个中断源的中断服务程序时为止，这一段时间称为中断响应时间。</p>
+<h2 id="时钟频率"><a href="#时钟频率" class="headerlink" title="时钟频率"></a>时钟频率</h2>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://ethelpie.github.io/2024/01/05/CPU/" data-id="clr02a60b0000ckdp8m5s982k" data-title="CPU" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-计算机协议" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/01/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8D%8F%E8%AE%AE/" class="article-date">
+  <time class="dt-published" datetime="2024-01-03T15:40:05.000Z" itemprop="datePublished">2024-01-03</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/01/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8D%8F%E8%AE%AE/">互联网协议套件</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="协议的重要性"><a href="#协议的重要性" class="headerlink" title="协议的重要性"></a>协议的重要性</h2><p>计算机之间要实现通信，除了技术支持还需要一些规则来进行信息匹配，方能进行交流。不同的厂商生产不同的计算机，其CPU等内部构造不尽相同，就好比两个外国人，那么计算机或者说外国人之间需要实现通信或交流，那么两者之间就需要学会同一种交流规则，对于两个外国人来说，这种交流规则就是语言，而对于计算机来说，这种交流规则就是各种协议。协议的出现让不同厂商之间生产的计算机只要能够支持同一种协议就能实现正常通信，进行交流。</p>
+<p>TCP&#x2F;IP（TCP&#x2F;IP Protocol Suite，或TCP&#x2F;IP Protocols，传输控制协议&#x2F;网际协议）是指能够在多个不同网络间实现信息传输的协议簇。TCP&#x2F;IP协议不仅仅指的是TCP 和IP两个协议，而是指一个由FTP、SMTP、TCP、UDP、IP等协议构成的协议簇， 只是因为在TCP&#x2F;IP协议中TCP协议和IP协议最具代表性，所以被称为TCP&#x2F;IP协议。</p>
+<p>TCP&#x2F;IP提供了点对点链接的机制，将资料应该如何封装、寻址、传输、路由以及在目的地如何接收，都加以标准化。它将软件通信过程抽象化为四个抽象层，采取协议堆栈的方式，分别实现出不同通信协议。协议族下的各种协议，依其功能不同，分别归属到这四个层次结构之中[7][8]，常视为是简化的七层OSI模型</p>
+<h2 id="OSI七层模型"><a href="#OSI七层模型" class="headerlink" title="OSI七层模型"></a>OSI七层模型</h2>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://ethelpie.github.io/2024/01/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8D%8F%E8%AE%AE/" data-id="clr02bq0g0002ckdpe1x2hlxx" data-title="互联网协议套件" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-树" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/01/03/%E6%A0%91/" class="article-date">
+  <time class="dt-published" datetime="2024-01-03T14:50:38.000Z" itemprop="datePublished">2024-01-03</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/01/03/%E6%A0%91/">树</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="术语"><a href="#术语" class="headerlink" title="术语"></a>术语</h2><p>节点的度：一个节点含有的子树的个数称为该节点的度；<br>树的度：一棵树中，最大的节点度称为树的度；<br>叶节点或终端节点：度为零的节点；<br>非终端节点或分支节点：度不为零的节点；<br>父亲节点或父节点：若一个节点含有子节点，则这个节点称为其子节点的父节点；<br>孩子节点或子节点：一个节点含有的子树的根节点称为该节点的子节点；<br>兄弟节点：具有相同父节点的节点互称为兄弟节点；<br>节点的层次：从根开始定义起，根为第1层，根的子节点为第2层，以此类推；<br>深度：对于任意节点n,n的深度为从根到n的唯一路径长，根的深度为0；<br>高度：对于任意节点n,n的高度为从n到一片树叶的最长路径长，所有树叶的高度为0；<br>堂兄弟节点：父节点在同一层的节点互为堂兄弟；<br>节点的祖先：从根到该节点所经分支上的所有节点；<br>子孙：以某节点为根的子树中任一节点都称为该节点的子孙。<br>森林：由m（m&gt;&#x3D;0）棵互不相交的树的集合称为森林；</p>
+<p>有序&#x2F;无序：<br>无序树：树中任意节点的子节点之间没有顺序关系，这种树称为无序树，也称为自由树。<br>有序树&#x2F;搜索树&#x2F;查找树：树中任意节点的子节点之间有顺序关系，这种树称为有序树。即树的所有节点按照一定的顺序排列，这样进行插入、删除、查找时效率就会非常高</p>
+<p>平衡&#x2F;不平衡：<br>平衡树<br>    绝对平衡树：所有叶节点在同一层<br>    非绝对平衡树<br>不平衡树</p>
+<p>节点的分叉情况：</p>
+<ol>
+<li>等叉树：是每个节点的键值个数都相同、子节点个数也都相同</li>
+<li>二叉树：每个节点最多含有两个子树的树称为二叉树；</li>
+<li>完全二叉树：对于一棵二叉树，假设其深度为d（d&gt;1）。除了第d层外，其它各层的节点数目均已达最大值，且第d层所有节点从左向右连续地紧密排列，这样的二叉树被称为完全二叉树；</li>
+<li>满二叉树：所有叶节点都在最底层的完全二叉树；</li>
+<li>平衡二叉树（AVL树）：当且仅当任何节点的两棵子树的高度差不大于1的二叉树；</li>
+<li>排序二叉树(二叉查找树（英语：Binary Search Tree))：也称二叉搜索树、有序二叉树；</li>
+<li>霍夫曼树：带权路径最短的二叉树称为哈夫曼树或最优二叉树；</li>
+<li>多叉树</li>
+<li>不等叉树：每个节点的键值个数不一定相同、子节点个数也不一定相同</li>
+<li>B树：对不等叉树的节点键值数和插入、删除逻辑添加一些特殊的要求，使其能达到绝对平衡的效果。B树全称Balance Tree。如果某个B树上所有节点的分叉数最大值是m，则把这个B数叫做m阶B树。<br>B-树<br>B+树<br>B*树</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://ethelpie.github.io/2024/01/03/%E6%A0%91/" data-id="clr02cp3e0005ckdpcpuhc9r3" data-title="树" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-数据库" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/01/03/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="article-date">
+  <time class="dt-published" datetime="2024-01-03T14:39:41.000Z" itemprop="datePublished">2024-01-03</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/01/03/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>定义：数据库是“按照数据结构来组织、存储和管理数据的仓库”。是一个长期存储在计算机内的、有组织的、可共享的、统一管理的大量数据的集合。</p>
+<h2 id="ACID-事务"><a href="#ACID-事务" class="headerlink" title="ACID 事务"></a>ACID 事务</h2><p>是指数据库管理系统（DBMS）在写入或更新资料的过程中，为保证交易（transaction）是正确可靠的，所必须具备的四个特性：原子性（atomicity，或称不可分割性）、一致性（consistency）、隔离性（isolation，又称独立性）、持久性（durability）。<br>在数据库系统中，一个事务是指：由一系列数据库操作组成的一个完整的逻辑过程。例如银行转帐，从原账户扣除金额，以及向目标账户添加金额，这两个数据库操作的总和，构成一个完整的逻辑过程，不可拆分。这个过程被称为一个事务，具有ACID特性。</p>
+<p>原子性<br>即使事务的一部分失败，整个事务也会失败。这样，每个事务都必须 100% 成功才能成功提交到数据库。</p>
+<p>一致性<br>系统要么将事务写入数据库（将数据库从一种有效状态更改为另一种状态），要么还原事务。</p>
+<p>隔离<br>尚未完成的事务无法由其他事务处理或修改。</p>
+<p>耐用性&#x2F;持久性<br>事务写入数据库后，即使数据库发生故障，事务也会保留在数据库中。</p>
+<h2 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h2><p>关系数据库<br>MySQL<br>Oracle<br>dBASE<br>Microsoft Access<br>Microsoft SQL Server<br>MariaDB<br>PostgreSQL</p>
+<p>非关系数据库（Nosql）<br>Redis  Redis是最流行的键值对存储数据库<br>MongoDB  面向文档的数据库管理系统</p>
+<p>Memcached与Redis有什么区别<br>Redis 和 Memcached 都是基于内存的数据存储系统。Memcached是高性能分布式内存缓存服务，其本质上就是一个内存key-value数据库。Redis是一个开源的key-value存储系统。与Memcached类似，Redis将大部分数据存储在内存中，支持的数据类型包括：字符串、哈希表、链表、集合、有序集合以及基于这些数据类型的相关操作。<br>那么，Memcached与Redis有什么区别呢？</p>
+<h2 id="事务型数据库"><a href="#事务型数据库" class="headerlink" title="事务型数据库"></a>事务型数据库</h2><p>事务型数据库属于行存储，</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://ethelpie.github.io/2024/01/03/%E6%95%B0%E6%8D%AE%E5%BA%93/" data-id="clr02c0hy0003ckdpdhmu8gsg" data-title="数据库" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-index" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2023/12/29/index/" class="article-date">
@@ -100,58 +363,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ethelpie.github.io/2023/12/29/index/" data-id="clqpzkj5w0001qodp9uatdcbu" data-title="index" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/12/29/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2023-12-29T01:39:24.387Z" itemprop="datePublished">2023-12-29</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/12/29/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://ethelpie.github.io/2023/12/29/hello-world/" data-id="clqpzkj5m0000qodp9tbrcexz" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
+      <a data-url="https://ethelpie.github.io/2023/12/29/index/" data-id="clr02bg1f0001ckdp6ruz1igi" data-title="index" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
       
       
       
@@ -173,15 +385,29 @@
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9B%BE/" rel="tag">图</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="tag">数据库</a></li></ul>
+    </div>
+  </div>
+
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/%E5%9B%BE/" style="font-size: 10px;">图</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" style="font-size: 10px;">数据库</a>
+    </div>
+  </div>
+
   
     
   <div class="widget-wrap">
     <h3 class="widget-title">Archiv</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/12/">December 2023</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/01/">January 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/12/">December 2023</a></li></ul>
     </div>
   </div>
 
@@ -194,11 +420,23 @@
       <ul>
         
           <li>
-            <a href="/2023/12/29/index/">index</a>
+            <a href="/2024/01/05/%E5%9B%BE/">图</a>
           </li>
         
           <li>
-            <a href="/2023/12/29/hello-world/">Hello World</a>
+            <a href="/2024/01/05/CPU/">CPU</a>
+          </li>
+        
+          <li>
+            <a href="/2024/01/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8D%8F%E8%AE%AE/">互联网协议套件</a>
+          </li>
+        
+          <li>
+            <a href="/2024/01/03/%E6%A0%91/">树</a>
+          </li>
+        
+          <li>
+            <a href="/2024/01/03/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a>
           </li>
         
       </ul>
@@ -214,7 +452,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       
-      &copy; 2023 Ethel Li<br>
+      &copy; 2024 Ethel Li<br>
       Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
