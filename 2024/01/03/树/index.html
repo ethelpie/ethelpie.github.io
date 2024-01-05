@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>树 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="术语节点的度：一个节点含有的子树的个数称为该节点的度；树的度：一棵树中，最大的节点度称为树的度；叶节点或终端节点：度为零的节点；非终端节点或分支节点：度不为零的节点；父亲节点或父节点：若一个节点含有子节点，则这个节点称为其子节点的父节点；孩子节点或子节点：一个节点含有的子树的根节点称为该节点的子节点；兄弟节点：具有相同父节点的节点互称为兄弟节点；节点的层次：从根开始定义起，根为第1层，根的子节点为">
+<meta property="og:type" content="article">
+<meta property="og:title" content="树">
+<meta property="og:url" content="https://ethelpie.github.io/2024/01/03/%E6%A0%91/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="术语节点的度：一个节点含有的子树的个数称为该节点的度；树的度：一棵树中，最大的节点度称为树的度；叶节点或终端节点：度为零的节点；非终端节点或分支节点：度不为零的节点；父亲节点或父节点：若一个节点含有子节点，则这个节点称为其子节点的父节点；孩子节点或子节点：一个节点含有的子树的根节点称为该节点的子节点；兄弟节点：具有相同父节点的节点互称为兄弟节点；节点的层次：从根开始定义起，根为第1层，根的子节点为">
+<meta property="og:locale">
+<meta property="article:published_time" content="2024-01-03T14:50:38.000Z">
+<meta property="article:modified_time" content="2024-01-03T07:28:09.472Z">
+<meta property="article:author" content="Ethel Li">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.0.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Suche"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Suche"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://ethelpie.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-树" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/01/03/%E6%A0%91/" class="article-date">
+  <time class="dt-published" datetime="2024-01-03T14:50:38.000Z" itemprop="datePublished">2024-01-03</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      树
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="术语"><a href="#术语" class="headerlink" title="术语"></a>术语</h2><p>节点的度：一个节点含有的子树的个数称为该节点的度；<br>树的度：一棵树中，最大的节点度称为树的度；<br>叶节点或终端节点：度为零的节点；<br>非终端节点或分支节点：度不为零的节点；<br>父亲节点或父节点：若一个节点含有子节点，则这个节点称为其子节点的父节点；<br>孩子节点或子节点：一个节点含有的子树的根节点称为该节点的子节点；<br>兄弟节点：具有相同父节点的节点互称为兄弟节点；<br>节点的层次：从根开始定义起，根为第1层，根的子节点为第2层，以此类推；<br>深度：对于任意节点n,n的深度为从根到n的唯一路径长，根的深度为0；<br>高度：对于任意节点n,n的高度为从n到一片树叶的最长路径长，所有树叶的高度为0；<br>堂兄弟节点：父节点在同一层的节点互为堂兄弟；<br>节点的祖先：从根到该节点所经分支上的所有节点；<br>子孙：以某节点为根的子树中任一节点都称为该节点的子孙。<br>森林：由m（m&gt;&#x3D;0）棵互不相交的树的集合称为森林；</p>
+<p>有序&#x2F;无序：<br>无序树：树中任意节点的子节点之间没有顺序关系，这种树称为无序树，也称为自由树。<br>有序树&#x2F;搜索树&#x2F;查找树：树中任意节点的子节点之间有顺序关系，这种树称为有序树。即树的所有节点按照一定的顺序排列，这样进行插入、删除、查找时效率就会非常高</p>
+<p>平衡&#x2F;不平衡：<br>平衡树<br>    绝对平衡树：所有叶节点在同一层<br>    非绝对平衡树<br>不平衡树</p>
+<p>节点的分叉情况：</p>
+<ol>
+<li>等叉树：是每个节点的键值个数都相同、子节点个数也都相同</li>
+<li>二叉树：每个节点最多含有两个子树的树称为二叉树；</li>
+<li>完全二叉树：对于一棵二叉树，假设其深度为d（d&gt;1）。除了第d层外，其它各层的节点数目均已达最大值，且第d层所有节点从左向右连续地紧密排列，这样的二叉树被称为完全二叉树；</li>
+<li>满二叉树：所有叶节点都在最底层的完全二叉树；</li>
+<li>平衡二叉树（AVL树）：当且仅当任何节点的两棵子树的高度差不大于1的二叉树；</li>
+<li>排序二叉树(二叉查找树（英语：Binary Search Tree))：也称二叉搜索树、有序二叉树；</li>
+<li>霍夫曼树：带权路径最短的二叉树称为哈夫曼树或最优二叉树；</li>
+<li>多叉树</li>
+<li>不等叉树：每个节点的键值个数不一定相同、子节点个数也不一定相同</li>
+<li>B树：对不等叉树的节点键值数和插入、删除逻辑添加一些特殊的要求，使其能达到绝对平衡的效果。B树全称Balance Tree。如果某个B树上所有节点的分叉数最大值是m，则把这个B数叫做m阶B树。<br>B-树<br>B+树<br>B*树</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://ethelpie.github.io/2024/01/03/%E6%A0%91/" data-id="clr02cp3e0005ckdpcpuhc9r3" data-title="树" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2024/01/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8D%8F%E8%AE%AE/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Neuer</strong>
+      <div class="article-nav-title">
+        
+          互联网协议套件
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2024/01/03/%E6%95%B0%E6%8D%AE%E5%BA%93/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Älter</strong>
+      <div class="article-nav-title">数据库</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9B%BE/" rel="tag">图</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="tag">数据库</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/%E5%9B%BE/" style="font-size: 10px;">图</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" style="font-size: 10px;">数据库</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archiv</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/01/">January 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/12/">December 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">letzter Beitrag</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2024/01/05/%E5%9B%BE/">图</a>
+          </li>
+        
+          <li>
+            <a href="/2024/01/05/CPU/">CPU</a>
+          </li>
+        
+          <li>
+            <a href="/2024/01/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8D%8F%E8%AE%AE/">互联网协议套件</a>
+          </li>
+        
+          <li>
+            <a href="/2024/01/03/%E6%A0%91/">树</a>
+          </li>
+        
+          <li>
+            <a href="/2024/01/03/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2024 Ethel Li<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
