@@ -71,6 +71,46 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-模型" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/01/08/%E6%A8%A1%E5%9E%8B/" class="article-date">
+  <time class="dt-published" datetime="2024-01-08T00:02:06.000Z" itemprop="datePublished">2024-01-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/01/08/%E6%A8%A1%E5%9E%8B/">模型</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="模型种类"><a href="#模型种类" class="headerlink" title="模型种类"></a>模型种类</h2><p>瀑布模型<br>螺旋模型<br>V模型<br>原型化模型</p>
+<p>螺旋模型强调风险分析，比较适用于庞大、复杂且高风险的系统。<br>兼顾了快速原型的迭代的特征以及瀑布模型的系统化与严格监控。螺旋模型最大的特点在于引入了其他模型不具备的风险分析，使得软件在无法排除重大风险时有机会停止，减少损失。<br>同时，在每个迭代阶段构建原型是螺旋模型用于减少风险的途径。螺旋模型更适用于大型安规系统级的软件应用。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://ethelpie.github.io/2024/01/08/%E6%A8%A1%E5%9E%8B/" data-id="clr3p4j1d00002sw984jub2iv" data-title="模型" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-计算机网络" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2024/01/07/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" class="article-date">
@@ -131,7 +171,10 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h2 id="Hexo常用"><a href="#Hexo常用" class="headerlink" title="Hexo常用"></a>Hexo常用</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;&quot;</span><br><span class="line">hexo server</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+        <h2 id="Hexo常用"><a href="#Hexo常用" class="headerlink" title="Hexo常用"></a>Hexo常用</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;&quot;  创建</span><br><span class="line">hexo server  本地运行</span><br><span class="line">hexo generate  快捷：hexo g</span><br><span class="line">hexo deploy  快捷：hexo d</span><br></pre></td></tr></table></figure>
+
+
+
       
     </div>
     <footer class="article-footer">
@@ -171,8 +214,6 @@
       
         <h1 id="图分类"><a href="#图分类" class="headerlink" title="图分类"></a>图分类</h1><p>1、数据流图<br>2、E-R图<br>3、关系图</p>
 <h2 id="数据流图"><a href="#数据流图" class="headerlink" title="数据流图"></a>数据流图</h2><p>数据流图实例（DFD-Data Flow Diagram）<br>数据流图：DFD对系统的功能与功能之间的数据流进行建模，顶层数据流图描述了系统输入与输出。</p>
-<p><img src="/../_posts/%E5%9B%BE/%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE.png" alt="图 6">  </p>
-<p>数据记录 输入 系统 输出 用户</p>
 <h3 id="分层DFD"><a href="#分层DFD" class="headerlink" title="分层DFD"></a>分层DFD</h3><ul>
 <li>绘制分层DFD的原则一般是：先全局后局部，先整体后细节，先抽象后具体。</li>
 <li>绘制分层DFD的步骤一般是：<ul>
@@ -202,9 +243,10 @@
 <h4 id="5-组合-Composition"><a href="#5-组合-Composition" class="headerlink" title="5. 组合(Composition)"></a><strong>5. 组合(Composition)</strong></h4><p>【组合关系】：是整体与部分的关系, 但部分不能离开整体而单独存在. 如公司和部门是整体和部分的关系, 没有公司就不存在部门.<br>    组合关系是关联关系的一种，是比聚合关系还要强的关系，它要求普通的聚合关系中代表整体的对象负责代表部分的对象的生命周期</p>
 <p>【代码体现】：成员变量<br>【箭头及指向】：带实心菱形的实线，菱形指向整体</p>
 <h4 id="6-依赖-Dependency"><a href="#6-依赖-Dependency" class="headerlink" title="6. 依赖(Dependency)"></a><strong>6. 依赖(Dependency)</strong></h4><p>【依赖关系】：是一种使用的关系,  即一个类的实现需要另一个类的协助, 所以要尽量不使用双向的互相依赖.<br>【代码表现】：局部变量、方法的参数或者对静态方法的调用<br>【箭头及指向】：带箭头的虚线，指向被使用者</p>
+<h3 id="关联"><a href="#关联" class="headerlink" title="关联"></a>关联</h3><p>类图<br>对象图<br>序列图<br>状态图</p>
 <h2 id="绘制工具"><a href="#绘制工具" class="headerlink" title="绘制工具"></a>绘制工具</h2><p>draw.io<br>processon</p>
 <h2 id="进度管理（甘特图Gantt图）"><a href="#进度管理（甘特图Gantt图）" class="headerlink" title="进度管理（甘特图Gantt图）"></a>进度管理（甘特图Gantt图）</h2><p>优点：可以清晰的表达每个任务的开始时间、结束时间和持续时间，任务之间的并行关系。<br>缺点：不能清晰确认任务之间的依赖关系，确定影响进度的关键任务。</p>
-
+<h2 id="E-R图"><a href="#E-R图" class="headerlink" title="E-R图"></a>E-R图</h2>
       
     </div>
     <footer class="article-footer">
@@ -294,7 +336,13 @@
         <h2 id="协议的重要性"><a href="#协议的重要性" class="headerlink" title="协议的重要性"></a>协议的重要性</h2><p>计算机之间要实现通信，除了技术支持还需要一些规则来进行信息匹配，方能进行交流。不同的厂商生产不同的计算机，其CPU等内部构造不尽相同.<br>就好比两个外国人，那么计算机或者说外国人之间需要实现通信或交流，那么两者之间就需要学会同一种交流规则，对于两个外国人来说，这种交流规则就是语言.<br>而对于计算机来说，这种交流规则就是各种协议。协议的出现让不同厂商之间生产的计算机只要能够支持同一种协议就能实现正常通信，进行交流。</p>
 <p>TCP&#x2F;IP（TCP&#x2F;IP Protocol Suite，或TCP&#x2F;IP Protocols，传输控制协议&#x2F;网际协议）是指能够在多个不同网络间实现信息传输的协议簇。TCP&#x2F;IP协议不仅仅指的是TCP 和IP两个协议，而是指一个由FTP、SMTP、TCP、UDP、IP等协议构成的协议簇， 只是因为在TCP&#x2F;IP协议中TCP协议和IP协议最具代表性，所以被称为TCP&#x2F;IP协议。</p>
 <p>TCP&#x2F;IP提供了点对点链接的机制，将资料应该如何封装、寻址、传输、路由以及在目的地如何接收，都加以标准化。它将软件通信过程抽象化为四个抽象层，采取协议堆栈的方式，分别实现出不同通信协议。协议族下的各种协议，依其功能不同，分别归属到这四个层次结构之中[7][8]，常视为是简化的七层OSI模型</p>
-<h1 id="TCP-IP协议族"><a href="#TCP-IP协议族" class="headerlink" title="TCP&#x2F;IP协议族"></a>TCP&#x2F;IP协议族</h1><h2 id="OSI七层模型"><a href="#OSI七层模型" class="headerlink" title="OSI七层模型"></a>OSI七层模型</h2><p>UDP一般VoIP用</p>
+<h1 id="TCP-IP协议族"><a href="#TCP-IP协议族" class="headerlink" title="TCP&#x2F;IP协议族"></a>TCP&#x2F;IP协议族</h1><h2 id="OSI七层模型"><a href="#OSI七层模型" class="headerlink" title="OSI七层模型"></a>OSI七层模型</h2><p>UDP适用&#x2F;应用场景：<br>UDP 适用于需要快速传输少量数据的场景，因为它不会建立连接，所以传输效率比较高。</p>
+<p>UDP 通常用于实时应用程序，比如视频会议、在线游戏、语音聊天等，因为这些应用程序通常要求实时性比较高，而且数据包丢失对应用程序的影响也不是很大。</p>
+<p>UDP 还可以用于一些控制信息的传输，比如路由协议、DNS 协议等。</p>
+<p>总的来说，UDP 适用于对数据传输速度要求较高，对数据完整性要求较低的场景。</p>
+<h3 id="电子邮件协议"><a href="#电子邮件协议" class="headerlink" title="电子邮件协议"></a>电子邮件协议</h3><p>作用：保证电子邮件正常发送和接收的一套规则和约定。<br>电子邮件协议有SMTP、POP3、IMAP4，都隶属于TCP&#x2F;IP协议簇，默认状态下，分别通过TCP端口25、110和143建立连接。</p>
+<p>只要区别：<br>SMTP用于发送邮件，POP3和IMAP用于接收邮件，IMP4用于拓展邮件功能。</p>
+<p><img src="/../_posts/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8D%8F%E8%AE%AE/%E7%94%B5%E5%AD%90%E5%8D%8F%E8%AE%AE.png"></p>
 
       
     </div>
@@ -486,6 +534,10 @@
       <ul>
         
           <li>
+            <a href="/2024/01/08/%E6%A8%A1%E5%9E%8B/">模型</a>
+          </li>
+        
+          <li>
             <a href="/2024/01/07/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络</a>
           </li>
         
@@ -499,10 +551,6 @@
         
           <li>
             <a href="/2024/01/05/CPU/">CPU</a>
-          </li>
-        
-          <li>
-            <a href="/2024/01/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8D%8F%E8%AE%AE/">互联网协议套件</a>
           </li>
         
       </ul>
